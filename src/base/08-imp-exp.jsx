@@ -1,10 +1,10 @@
 import heroes, { owners } from '../data/heroes';
 
-const getHeroeById = ({ id }) => heroes.find((heroe) => heroe.id === id);
+export const getHeroeById = ({ id }) => heroes.find((heroe) => heroe.id === id);
 
-console.log(getHeroeById({ id: 2 }));
+// console.log(getHeroeById({ id: 2 }));
 
-const getHeroeByOwner = ({ owner }) =>
+export const getHeroeByOwner = ({ owner }) =>
   heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroeByOwner({ owner: 'DC' }));
+// console.log(getHeroeByOwner({ owner: 'DC' }));
